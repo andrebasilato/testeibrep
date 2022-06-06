@@ -1,0 +1,35 @@
+<?php
+$idioma['erro_metodo_nao_permitido'] = 'Método não permitido';
+$idioma['erro_parametros_nao_informados'] = 'Parâmetros não informados';
+$idioma['erro_oferta_invalida'] = 'Oferta inválida';
+$idioma['erro_curso_invalido'] = 'Curso inválido';
+$idioma['erro_escola_invalida'] = 'CFC inválido';
+$idioma['erro_dados_corrompidos'] = 'Dados corrompidos';
+$idioma['erro_bandeira_nao_existe'] = 'A Bandeira do cartão não é válido ou a bandeira não existe';
+$idioma['erro_forma_pagamento_invalida'] = 'A forma de pagamento informada não existe';
+$idioma['erro_pessoa_inexistente'] = 'Aluno não encontrado';
+$idioma['erro_documento_invalido'] = 'Documento inválido';
+$idioma['erro_estado_invalido'] = 'Estado inválido';
+$idioma['erro_cidade_invalida'] = 'Cidade inválida';
+$idioma['erro_banco_invalido'] = 'O banco informado não existe no sistema.';
+$idioma['erro_pais_invalido'] = 'País inválido';
+$idioma['erro_senha_incorreta'] = 'Dados inválidos';
+$idioma['erro_atendente_invalido'] = 'Atendente inválido';
+$idioma['erro_cadastro_matricula'] = 'Erro no cadastro da matricula';
+$idioma['erro_maximo_turma'] = 'A turma já chegou ao número máximo de matrículas';
+$idioma['erro_atualizar_token'] = 'Erro de processamento';
+$idioma['token_invalido'] = 'Token inválido';
+$idioma['dados_corrompidos'] = 'Os dados estão corrompidos';
+$idioma['matricula_duplicada'] = 'A matrícula já existe';
+$idioma['financeiro_quantidade_parcelas_vazio'] = 'Financeiro não cadastrado pois quantidade de parcelas não foi informada';
+$idioma['bandeira_cartao_vazio'] = 'Financeiro não cadastrado pois a bandeira do cartão não foi informada';
+$idioma['autorizacao_cartao_vazio'] = 'Financeiro não cadastrado pois a autorização do cartão não foi informada';
+$idioma['financeiro_valor_vazio'] = 'Financeiro não cadastrado pois o valor total não foi informado';
+$idioma['financeiro_vencimento_vazio'] = 'Financeiro não cadastrado pois o vencimento não foi informado';
+$idioma['financeiro_situacao_vazio'] = 'Financeiro não cadastrado pois a situação não foi informada';
+$idioma['sucesso_cadastrar_matricula'] = 'Matrícula cadastrada com sucesso';
+
+$idioma['cc_cheque_grande'] = 'Conta Corrente do Cheque maior que 20 caracteres';
+$idioma['numero_cheque_grande'] = 'Número do Cheque maior que 20 caracteres';
+$idioma['agencia_cheque_grande'] = 'Agência do Cheque maior que 20 caracteres';
+$idioma['emitente_cheque_grande'] = 'Emissor do Cheque maior que 100 caracteres';

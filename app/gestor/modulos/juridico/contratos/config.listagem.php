@@ -1,0 +1,120 @@
+<?php
+
+// Array de configuração para a listagem
+$config["listagem"] = array(
+array("id" => "idcontrato",
+      "variavel_lang" => "tabela_idtipo",
+      "tipo" => "php",
+      "coluna_sql" => "idcontrato",
+      "valor" => '
+        $diferenca = dataDiferenca($linha["data_cad"], date("Y-m-d H:i:s"), "H");
+        if($diferenca > 24) {
+            return "<span title=\"$diferenca\">".$linha["idcontrato"]."</span>";
+        } else {
+            return "<span title=\"$diferenca\">".$linha["idcontrato"]."</span> <i class=\"novo\"></i>";
+        }
+        ',
+      "busca" => true,
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_metodo" => 1,
+      "tamanho" => 80),
+
+array("id" => "nome",
+      "variavel_lang" => "tabela_nome",
+      "tipo" => "banco",
+      "evento" => "maxlength='100'",
+      "coluna_sql" => "nome",
+      "valor" => "nome",
+      "busca" => true,
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_metodo" => 2),
+
+array("id" => "ativo_painel",
+      "variavel_lang" => "tabela_ativo_painel",
+      "tipo" => "php",
+      "coluna_sql" => "ativo_painel",
+      "valor" => 'if($linha["ativo_painel"] == "S") {
+                      return "<span data-original-title=\"".$idioma["ativo"]."\" class=\"label label-success\" data-placement=\"left\" rel=\"tooltip\">A</span>";
+                  } else {
+                      return "<span data-original-title=\"".$idioma["inativo"]."\" class=\"label label-important\" data-placement=\"left\" rel=\"tooltip\">I</span>";
+                  }',
+      "busca" => true,
+      "busca_tipo" => "select",
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_array" => "ativo",
+      "busca_metodo" => 1,
+      "tamanho" => 60),
+
+array("id" => "data_cad",
+      "variavel_lang" => "tabela_datacad",
+      "coluna_sql" => "data_cad",
+      "tipo" => "php",
+      "valor" => 'return formataData($linha["data_cad"],"br",1);',
+      "tamanho" => "140",
+      "busca" => true,
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_metodo" => 3
+      ),
+
+array("id" => "opcoes",
+      "variavel_lang" => "tabela_opcoes",
+      "tipo" => "php",
+      "valor" => 'return "<a class=\"btn dropdown-toggle btn-mini\" data-original-title=\"".$idioma["tabela_preview_tooltip"]."\" href=\"/".$this->url["0"]."/".$this->url["1"]."/".$this->url["2"]."/".$linha["idcontrato"]."/preview\" data-placement=\"left\" target=\"_blank\" rel=\"tooltip \">".$idioma["tabela_preview"]."</a>&nbsp; <a class=\"btn dropdown-toggle btn-mini\" data-original-title=\"".$idioma["tabela_opcoes_tooltip"]."\" href=\"/".$this->url["0"]."/".$this->url["1"]."/".$this->url["2"]."/".$linha["idcontrato"]."/opcoes\" data-placement=\"left\" rel=\"tooltip facebox\">".$idioma["tabela_opcoes"]."</a>"',
+      "busca_botao" => true,
+      "tamanho" => "160")
+
+);
+
+
+
+$config["listagem_imagem"] = array(
+    array(
+        "id" => "idimagem",
+        "variavel_lang" => "tabela_idtipo",
+        "tipo" => "php",
+        "coluna_sql" => "idimagem",
+        "valor" => '
+        $diferenca = dataDiferenca($linha["data_cad"], date("Y-m-d H:i:s"), "H");
+        if($diferenca > 24) {
+            return "<span title=\"$diferenca\">".$linha["idimagem"]."</span>";
+        } else {
+            return "<span title=\"$diferenca\">".$linha["idimagem"]."</span> <i class=\"novo\"></i>";
+        }
+        ',
+        "busca" => true,
+        "busca_class" => "inputPreenchimentoCompleto",
+        "busca_metodo" => 1,
+        "tamanho" => 80
+    ),
+array("id" => "nome",
+      "variavel_lang" => "tabela_nome",
+      "tipo" => "banco",
+      "evento" => "maxlength='100'",
+      "coluna_sql" => "arquivo_nome",
+      "valor" => "arquivo_nome",
+      "busca" => true,
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_metodo" => 2),
+
+
+array(
+    "id" => "tag",
+    "variavel_lang" => "tabela_tag",
+    "tipo" => "banco",
+    "evento" => "maxlength='100'",
+    "coluna_sql" => "tag",
+    "valor" => "tag",
+    "busca" => false
+),
+
+array("id" => "data_cad",
+      "variavel_lang" => "tabela_datacad",
+      "coluna_sql" => "data_cad",
+      "tipo" => "php",
+      "valor" => 'return formataData($linha["data_cad"],"br",1);',
+      "tamanho" => "140",
+      "busca" => true,
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_metodo" => 3
+      ),
+);

@@ -1,0 +1,30 @@
+<?php
+$idioma["titulo_opcao_cadastar"] = "Cadastrar";
+$idioma["titulo_opcao_editar"] = "Editar";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["modificar_sucesso"] = "Previsão modificada com sucesso.";
+$idioma["legendadadosdados"] = "Dados da previsão";
+$idioma["form_nome"] = "Descrição:";
+$idioma["nome_vazio"] = "Informe o nome da previsão.";
+$idioma["nome_utilizado"] = "O nome informado já está sendo utilizada por outra previsão.";
+$idioma["form_ativo_painel"] = "Ativo no painel";
+$idioma["ativo_vazio"] = "Você precisa informar se está ativo ou não.";
+$idioma["form_ativo_ajuda"] = "Essa funcionalidade não remove do painel, somente oculta em relacionamentos com outras funcionalidades";
+$idioma["form_observacoes"] = "Observações:";
+$idioma["form_idsindicato"] = "Sindicato:";
+$idioma["idsindicato_vazio"] = "Informe a sindicato da previsão.";
+$idioma["form_idcategoria"] = "Categoria:";
+$idioma["form_idsubcategoria"] = "Subcategoria:";
+$idioma['form_selecione_categoria'] = "Selecione uma categoria";
+$idioma['form_selecione_subcategoria'] = "Selecione uma subcategoria";
+$idioma['form_selecione_inst'] = "Selecione uma Sindicato";
+$idioma['form_selecione_instcategoria'] = "Selecione uma Categoria";
+$idioma['idcategoria_vazio'] = "Informe a categoria";
+$idioma['idsubcategoria_vazio'] = "Informe a subcategoria";
+$idioma["form_valor"] = "Valor:";
+$idioma["valor_vazio"] = "Informe o valor da previsão.";
+$idioma["form_data"] = "Data:";
+$idioma["data_vazio"] = "Informe a data da previsão.";
+
+$idioma["cadastro_sindicato"] = "Administrar sindicatos";
+$idioma["cadastro_categoria"] = "Administrar categorias";

@@ -1,0 +1,39 @@
+<? 
+$idioma["informacoes"] = "Informações Encontradas: <strong>%s</strong>";
+$idioma["paginas"] = "Página <strong>%s</strong> de <strong>%s</strong> página(s). ";
+
+$idioma["tabela_matricula"] = "Número";
+$idioma['tabela_numero_contrato'] = 'Contrato';
+$idioma['tabela_codaluno'] = 'Cod. aluno';
+$idioma['tabela_sindicato'] = 'Estado';
+$idioma["tabela_situacao"] = "Situação *";
+$idioma["tabela_oferta"] = "Oferta";
+$idioma["tabela_curso"] = "Curso";
+$idioma["tabela_escola"] = "Escola";
+$idioma["tabela_aluno"] = "Aluno";
+$idioma["tabela_opcoes"] = "Opções";
+$idioma["tabela_tipo"] = "Tipo";
+$idioma["tabela_associacao"] = "Pessoa";
+$idioma["tabela_arquivo_nome"] = "Arquivo";
+$idioma["pag_anterior"] = "Anterior";
+$idioma["pag_proxima"] = "Próxima";
+$idioma["registros"] = "Quantidade de registros:";
+$idioma["exibir"] = "Exibir";
+$idioma["buscar"] = "Buscar";
+$idioma["buscar_em"] = " em ";
+$idioma["buscar_por"] = " Buscar por: ";
+$idioma["tabela_abrir"] = "Administrar";
+$idioma["tabela_download"] = "Download";
+$idioma["tabela_aprovar"] = "Aprovar";
+$idioma["confirma_aprovar_documento"] = "Deseja realmente aprovar o documento?";
+$idioma["sem_permisao"] = "Sem permissão";
+$idioma["mensagem_aprovar_arquivo_sucesso"] = "Documento de matrícula aprovado com sucesso.";
+$idioma["mensagem_aprovar_arquivo_erro"] = "Ocorreu algum erro ao tentar aprovar o documento de matrícula.";
+$idioma["mensagem_permissao_workflow"] = "O workflow configurado não permite essa alteração na situação atual da matrícula.";
+$idioma['mensagem_sem_workflow_aprovado_pendencia'] = 'Não há uma situação do tipo aprovado com pendência no workflow de matrícula';
+$idioma['mensagem_sem_workflow_aprovado'] = 'Não há uma situação do tipo aprovado no workflow de matrícula';
+$idioma['mensagem_sem_matricula_workflow'] = 'Erro ao tentar alterar a situação. Verifique a situação atual da matrícula.';
+$idioma['mensagem_situacao_reprovada_sucesso'] = 'Permissão de alteração reprovada com sucesso.';
+$idioma['mensagem_situacao_aprovada_sucesso'] = 'Permissão de alteração aprovada com sucesso.';
+$idioma['erro_reprovar_matricula'] = 'Erro ao tentar reprovar a permissão de aprovação da matrícula';
+?>

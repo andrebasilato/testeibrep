@@ -1,0 +1,6 @@
+# ignorar todos
+*
+# exceto o .gitignore
+!.gitignore
+!.htaccess
+!leiame.txt

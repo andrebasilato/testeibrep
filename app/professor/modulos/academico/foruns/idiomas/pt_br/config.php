@@ -1,0 +1,2 @@
+<?php
+$idioma["funcionalidade"] = "Fóruns";

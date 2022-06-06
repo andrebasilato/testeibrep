@@ -1,18 +1,28 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
-    }
+  "name": "Oraculo-IBREPTRAN",
+  "version": "3.4.0",
+  "description": "Automação do Alfama Oráculo",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfamaweb/Oraculo-IbrepTran.git"
+  },
+  "author": "Alfama Web",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfamaweb/Oraculo-IbrepTran/issues"
+  },
+  "homepage": "https://github.com/alfamaweb/Oraculo-IbrepTran"
 }

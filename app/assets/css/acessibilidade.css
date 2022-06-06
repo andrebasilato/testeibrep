@@ -1,0 +1,42 @@
+.acessibilidade {
+    float:right;
+    margin-top: -10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+.acessibilidade i {
+    width: 16px !important;
+    text-align: center;
+    border: solid 1px #7E6F41;
+    border-radius: 4px;
+    padding: 1px 3px;
+    margin: 0 2px;
+}
+.acessibilidade i.icon-plus {
+    margin-left: 10px;
+}
+.acessibilidade i:hover {
+    color: white;
+    background-color: #7E6F41;
+}
+
+.nav-breadcrumb.contrast .nav-breadcrumb-item {
+    color: #BEBEBE !important;
+}
+.nav-breadcrumb.contrast .nav-breadcrumb-item.first-nav,
+.nav-breadcrumb.contrast .nav-breadcrumb-item.no-mobile,
+.nav-breadcrumb.contrast .nav-breadcrumb-item.last-nav {
+    background-color: #333333 !important;
+}
+.nav-breadcrumb.contrast .nav-breadcrumb-item,
+.nav-breadcrumb.contrast .nav-breadcrumb-item a:hover {
+    background-color: #525252 !important;
+}
+.nav-breadcrumb.contrast .nav-breadcrumb-item a p {
+    color: yellow;
+}
+#conteudo.contrast,
+#conteudo.contrast * {
+    color: yellow !important;
+    background-color: #232323 !important;
+}

@@ -1,0 +1,41 @@
+<?php
+$idioma['informacoes'] = 'Informações Encontradas: <strong>%s</strong>';
+$idioma['paginas'] = 'Página <strong>%s</strong> de <strong>%s</strong> página(s). ';
+
+$idioma['tabela_idconta'] = 'Id.';
+$idioma['tabela_vencimento'] = 'Vencimento';
+$idioma['tabela_matricula'] = 'Matrícula';
+$idioma['tabela_aluno'] = 'Aluno';
+$idioma['tabela_idescola'] = 'Escola';
+$idioma['tabela_qtde'] = 'Qtde';
+$idioma['tabela_ativo_painel'] = 'Sit.';
+$idioma['tabela_datacad'] = 'Data de criação';
+$idioma['tabela_situacao'] = 'Sit.';
+$idioma['tabela_valor'] = 'Valor';
+$idioma['tabela_categoria'] = 'Categoria';
+$idioma['tabela_fornecedor'] = 'Fornecedor / Cliente';
+$idioma['ativo'] = 'Objeto ativo no painel.';
+$idioma['inativo'] = 'Objeto inativo no painel.';
+$idioma['tabela_opcoes_tooltip'] = 'Clique para ver as opções.';
+$idioma['tabela_opcoes'] = 'Opções';
+$idioma['tabela_ficha'] = 'Ficha';
+$idioma['tabela_abrir'] = 'Abrir matrícula';
+$idioma['titulo_historico'] = 'Histórico';
+$idioma['tabela_historico'] = 'Abrir';
+$idioma['tabela_historico_tooltip'] = 'Clique para ver as histórico.';
+
+$idioma['btn_popup'] = 'Visualizar';
+$idioma['pag_anterior'] = 'Anterior';
+$idioma['pag_proxima'] = 'Próxima';
+$idioma['registros'] = 'Quantidade de registros:';
+$idioma['exibir'] = 'Exibir';
+$idioma['buscar'] = 'Buscar';
+$idioma['buscar_em'] = ' em ';
+$idioma['buscar_por'] = ' Buscar por: ';
+$idioma['sair_fila'] = 'Sair do mural';
+
+$idioma['visualizar_resultado'] = 'Visualizar buscas da pesquisa';
+
+$idioma['sim'] = 'Sim';
+$idioma['nao'] = 'Não';
+$idioma['fila_envio'] = 'Fila de envio';

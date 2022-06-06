@@ -1,0 +1,225 @@
+<?
+$idioma['form_erros'] = 'Por favor corrija o(s) erro(s) abaixo: ';
+$idioma['nome_utilizado'] = 'O nome informado já está sendo utilizado por outra declaração.';
+$idioma['legendadadosdados'] = 'Dados da declaração';
+$idioma['form_nome'] = 'Nome:';
+$idioma['nome_vazio'] = 'Informe o nome da declaração.';
+$idioma['form_ativo_painel'] = 'Ativo no painel';
+$idioma['ativo_vazio'] = 'Você precisa informar se está ativo ou não.';
+$idioma['tipo_vazio'] = 'Informe o tipo da declaração';
+$idioma['form_ativo_ajuda'] = 'Essa funcionalidade não remove do painel, somente oculta em relacionamentos com outras funcionalidades';
+
+$idioma['form_aluno_solicita'] = 'Aluno solicita';
+$idioma['aluno_solicita_vazio'] = 'Você precisa informar se o aluno pode ou não solicitar pelo seu painel.';
+$idioma['form_aluno_solicita_ajuda'] = 'Essa funcionalidade define se o aluno pode ou não solicitar esta declaração pelo seu painel.';
+
+$idioma['form_declaracao'] = 'Declaração:';
+$idioma['declaracao_vazio'] = 'Informe a declaração';
+$idioma['form_tipo'] = 'Tipo da declaração:';
+
+$idioma['form_top'] = 'Margem topo PDF:';
+$idioma['form_bottom'] = 'Margem rodapé PDF:';
+$idioma['form_left'] = 'Margem esquerda PDF:';
+$idioma['form_right'] = 'Margem direita PDF:';
+
+$idioma['form_botao_variaveis_aluno'] = 'Variáveis do Aluno';
+$idioma['variavel_titulo_aluno'] = 'ALUNO:';
+$idioma['variavel_aluno_nome'] = 'Nome do aluno';
+$idioma['variavel_aluno_documento'] = 'CPF ou CNPJ do aluno';
+$idioma['variavel_aluno_rg'] = 'RG do aluno';
+$idioma['variavel_aluno_rne'] = 'RNE do aluno';
+$idioma['variavel_aluno_estadocivil'] = 'Estado civil do aluno';
+$idioma['variavel_aluno_endereco'] = 'Endereço do aluno';
+$idioma['variavel_aluno_bairro'] = 'Bairro do aluno';
+$idioma['variavel_aluno_estado'] = 'Estado do aluno';
+$idioma['variavel_aluno_cidade'] = 'Cidade do aluno';
+$idioma['variavel_aluno_cep'] = 'CEP do aluno';
+$idioma['variavel_aluno_numero'] = 'Número do aluno';
+$idioma['variavel_aluno_complemento'] = 'Complemento do aluno';
+$idioma['variavel_aluno_nacionalidade'] = 'Nacionalidade do aluno';
+$idioma['variavel_aluno_naturalidade'] = 'Naturalidade do aluno';
+$idioma['variavel_aluno_nascimento'] = 'Data de nascimento do aluno';
+$idioma['variavel_aluno_orgao_expeditor'] = 'Orgão expeditor';
+$idioma['variavel_aluno_mae'] = 'Nome do mãe';
+$idioma['variavel_aluno_pai'] = 'Nome da pai';
+$idioma['variavel_aluno_emissao'] = 'Data emissão';
+$idioma['variavel_aluno_logradouro'] = 'Logradouro';
+$idioma['variavel_aluno_telefone'] = 'Telefone do aluno';
+$idioma['variavel_aluno_celular'] = 'Celular do aluno';
+$idioma['variavel_aluno_email'] = 'E-mail do aluno';
+$idioma['variavel_aluno_banco'] = 'Banco';
+$idioma['variavel_aluno_agencia'] = 'Agência';
+$idioma['variavel_aluno_conta'] = 'Conta';
+$idioma['variavel_aluno_banco_nome_titular'] = 'Nome do titular da conta';
+$idioma['variavel_aluno_banco_cpf_titular'] = 'CPF do titular da conta';
+$idioma['variavel_aluno_banco_observacoes'] = 'Observações do banco';
+$idioma['variavel_aluno_renda'] = 'Renda';
+$idioma['variavel_aluno_observacoes'] = 'Observações';
+$idioma['variavel_aluno_profissao'] = 'Profissão';
+
+$idioma['form_botao_variaveis_matricula'] = 'Variáveis da Matrícula';
+$idioma['variavel_titulo_matricula'] = 'MATRÍCULA:';
+$idioma['variavel_matricula_numero'] = 'Número da matrícula';
+$idioma['variavel_matricula_data_conclusao'] = 'Data de conclusão';
+$idioma['variavel_matricula_data_matricula'] = 'Data da matrícula';
+$idioma['variavel_matricula_num_contrato'] = 'Número do contrato';
+$idioma['variavel_matricula_valor_contrato'] = 'Valor do contrato';
+$idioma['variavel_matricula_qtde_parcelas'] = 'Qtde de parcelas';
+$idioma['variavel_matricula_data_expedicao'] = 'Data de expedição';
+$idioma['variavel_matricula_ultimo_acesso_ava'] = 'Data de ultimo acesso ao AVA';
+$idioma['variavel_matricula_total_acessos_ava'] = 'Quantidade total de acessos ao AVA';
+$idioma['variavel_matricula_data_registro'] = 'Data de registro';
+
+$idioma['form_botao_variaveis_curso'] = 'Variáveis do Curso';
+$idioma['variavel_titulo_curso'] = 'CURSO:';
+$idioma['variavel_curso_codigo'] = 'Código do curso';
+$idioma['variavel_curso_nome'] = 'Nome';
+$idioma['variavel_curso_dia_acesso_ava'] = 'Dias de acesso ao AVA';
+$idioma['variavel_curso_percentual_ideal_ava'] = 'Percentual ideal de acesso ao AVA';
+$idioma['variavel_curso_tipo'] = 'Tipo do curso';
+$idioma['variavel_curso_carga_horaria_presencial'] = 'Carga horária presencial';
+$idioma['variavel_curso_carga_horaria_distancia'] = 'Carga horária a distância';
+$idioma['variavel_curso_carga_horaria_total'] = 'Carga horária total';
+$idioma['variavel_curso_perfil'] = 'Perfil';
+$idioma['variavel_curso_fundamentacao'] = 'Fundamentação';
+$idioma['variavel_curso_fundamentacao_legal'] = 'Fundamentação legal';
+$idioma['variavel_curso_abreviacao'] = 'Empresa';
+$idioma['variavel_curso_area'] = 'Área do curso';
+
+$idioma['form_botao_variaveis_escola'] = 'Variáveis do CFC';
+$idioma['variavel_titulo_escola'] = 'CURSO:';
+$idioma['variavel_escola_razao_social'] = 'Razão social';
+$idioma['variavel_escola_nome_fantasia'] = 'Nome fantasia';
+$idioma['variavel_escola_inscricao_estadual'] = 'Inscrição estadual';
+$idioma['variavel_escola_inscricao_municipal'] = 'Inscrição municipal';
+$idioma['variavel_escola_bairro'] = 'Bairro';
+$idioma['variavel_escola_fax'] = 'Fax';
+$idioma['variavel_escola_email'] = 'E-mail';
+$idioma['variavel_escola_telefone'] = 'Telefone';
+$idioma['variavel_escola_cep'] = 'CEP ';
+$idioma['variavel_escola_logradouro'] = 'Logradouro';
+$idioma['variavel_escola_endereco'] = 'Endereço ';
+$idioma['variavel_escola_estado'] = 'Estado';
+$idioma['variavel_escola_quantidade_pessoas_comportadas'] = 'Quantidade máxima de pessoas comportadas para provas presenciais';
+
+
+$idioma['variavel_sindicato_nome'] = 'Nome';
+$idioma['variavel_sindicato_nome_abreviado'] = 'Nome abreviado';
+$idioma['variavel_sindicato_cnpj'] = 'CNPJ';
+$idioma['variavel_sindicato_fax'] = 'Fax';
+$idioma['variavel_sindicato_nre'] = 'NRE';
+$idioma['variavel_sindicato_email'] = 'E-mail';
+$idioma['variavel_sindicato_telefone'] = 'Telefone';
+$idioma['variavel_sindicato_cep'] = 'CEP ';
+$idioma['variavel_sindicato_logradouro'] = 'Logradouro';
+$idioma['variavel_sindicato_endereco'] = 'Endereço ';
+$idioma['variavel_sindicato_bairro'] = 'Endereço ';
+$idioma['variavel_sindicato_cidade'] = 'Cidade';
+$idioma['variavel_sindicato_estado'] = 'Estado';
+$idioma['variavel_sindicato_gerente_nome'] = 'Nome abreviado';
+$idioma['variavel_sindicato_fax'] = 'Fax';
+$idioma['variavel_sindicato_nre'] = 'NRE';
+$idioma['variavel_sindicato_email'] = 'E-mail';
+$idioma['variavel_sindicato_telefone'] = 'Telefone';
+
+
+$idioma['form_botao_variaveis_sindicato'] = 'Variáveis do estados';
+$idioma['variavel_titulo_sindicato'] = 'INSTIUIÇÃO:';
+$idioma['variavel_sindicato_nome'] = 'Nome';
+$idioma['variavel_sindicato_nome_abreviado'] = 'Nome abreviado';
+$idioma['variavel_sindicato_fax'] = 'Fax';
+$idioma['variavel_sindicato_nre'] = 'NRE';
+$idioma['variavel_sindicato_email'] = 'E-mail';
+$idioma['variavel_sindicato_telefone'] = 'Telefone';
+$idioma['variavel_sindicato_cep'] = 'CEP';
+$idioma['variavel_sindicato_logradouro'] = 'Logradouro';
+$idioma['variavel_sindicato_endereco'] = 'Endereço';
+$idioma['variavel_sindicato_bairro'] = 'Bairro';
+$idioma['variavel_sindicato_estado'] = 'Estado';
+$idioma['variavel_sindicato_gerente_nome'] = 'Nome do gerente';
+$idioma['variavel_sindicato_gerente_telefone'] = 'Telefone do gerente';
+$idioma['variavel_sindicato_gerente_celular'] = 'Celular do gerente';
+$idioma['variavel_sindicato_gerente_email'] = 'E-mail do gerente';
+$idioma['variavel_sindicato_secretario_nome'] = 'Nome do secretário';
+$idioma['variavel_sindicato_secretario_telefone'] = 'Telefone do secretário';
+$idioma['variavel_sindicato_secretario_celular'] = 'Celular do secretário';
+$idioma['variavel_sindicato_secretario_email'] = 'E-mail do secretário';
+$idioma['variavel_sindicato_secretario_portaria'] = 'Portaria do secretário';
+$idioma['variavel_sindicato_diretor_nome'] = 'Nome do diretor';
+$idioma['variavel_sindicato_diretor_telefone'] = 'Telefone do diretor';
+$idioma['variavel_sindicato_diretor_celular'] = 'Celular do diretor';
+$idioma['variavel_sindicato_diretor_email'] = 'E-mail do diretor';
+$idioma['variavel_sindicato_diretor_portaria'] = 'Portaria do diretor';
+
+$idioma['form_botao_variaveis_vendedor'] = 'Variáveis do Atendente';
+$idioma['variavel_titulo_vendedor'] = 'ATENDENTE:';
+$idioma['variavel_vendedor_nome'] = 'Nome';
+$idioma['variavel_vendedor_documento'] = 'CPF ou CNPJ';
+$idioma['variavel_vendedor_rg'] = 'RG';
+$idioma['variavel_vendedor_estadocivil'] = 'Estado civil';
+$idioma['variavel_vendedor_endereco'] = 'Endereço';
+$idioma['variavel_vendedor_bairro'] = 'Bairro';
+$idioma['variavel_vendedor_estado'] = 'Estado';
+$idioma['variavel_vendedor_cidade'] = 'Cidade';
+$idioma['variavel_vendedor_cep'] = 'CEP ';
+$idioma['variavel_vendedor_numero'] = 'Número';
+$idioma['variavel_vendedor_complemento'] = 'Complemento ';
+$idioma['variavel_vendedor_orgao_expeditor'] = 'Orgão expeditor';
+$idioma['variavel_vendedor_emissao'] = 'Data emissão';
+$idioma['variavel_vendedor_logradouro'] = 'Logradouro';
+$idioma['variavel_vendedor_telefone'] = 'Telefone';
+$idioma['variavel_vendedor_celular'] = 'Celular';
+$idioma['variavel_vendedor_email'] = 'E-mail';
+
+$idioma['form_botao_variaveis_curriculo'] = 'Variáveis do Currículo';
+$idioma['variavel_titulo_curriculo'] = 'CURRÍCULO:';
+$idioma['variavel_curriculo_nome'] = 'Nome';
+$idioma['variavel_curriculo_carga_horaria'] = 'Carga horária do currículo';
+$idioma['variavel_curriculo_media'] = 'Média';
+$idioma['variavel_curriculo_dias_minimo'] = 'Dias mínimos para conclusão';
+$idioma['variavel_curriculo_porcentagem_ava'] = 'Porcentagem';
+$idioma['form_difere_automatico'] = 'Deferir automaticamente:';
+$idioma['form_botao_variaveis_oferta'] = 'Variáveis da Oferta';
+$idioma['variavel_titulo_oferta'] = 'OFERTA:';
+$idioma["variavel_oferta_nome"] = "Nome";
+$idioma["variavel_oferta_data_inicio_matricula"] = "Data de início das matrículas";
+$idioma["variavel_oferta_data_fim_matricula"] = "Data fim das matrículas";
+$idioma["variavel_oferta_data_limite"] = "Data limite";
+$idioma["variavel_oferta_modalidade"] = "Modalidade";
+$idioma["variavel_oferta_data_inicio_acesso_ava"] = "Data de inicio de acesso ao AVA";
+$idioma["variavel_oferta_data_fim_acesso_ava"] = "Data fim de acesso ao AVA";
+
+$idioma['form_botao_variaveis_declaracao'] = 'Variáveis da Declaração / Campos Adicionais';
+$idioma['variavel_declaracao_link'] = 'Link de validação';
+$idioma['variavel_declaracao_cod_validacao'] = 'Código de validação';
+$idioma['variavel_titulo_declaracao'] = 'Declaração';
+$idioma['variavel_quebra_pagina'] = 'Quebra de página';
+$idioma['variavel_data_geracao'] = 'Data de geração da declaração';
+$idioma['variavel_data_extenso'] = 'Data de geração da declaração por extenso';
+$idioma['variavel_local'] = 'Local';
+$idioma['variavel_data_prevista_conclusao'] = 'Data prevista de conclusão';
+$idioma['variavel_adicional'] = 'Campo adicional';
+$idioma['variavel_adicional2'] = 'Campo adicional 2';
+$idioma['variavel_adicional3'] = 'Campo adicional 3';
+$idioma['variavel_adicional4'] = 'Campo adicional 4';
+
+$idioma['form_upload'] = 'Background:';
+$idioma['arquivo_invalido'] = 'Arquivo não é uma imagem! (Extensões permitidas: .jpg .jpeg .gif .png .bmp)';
+$idioma['tamanho_invalido'] = 'O arquivo é muito grande tamanho permitido é de 2MB';
+$idioma['arquivo_enviado'] = 'Arquivo enviado:';
+$idioma['arquivo_excluir'] = 'Remover';
+$idioma['arquivo_excluir_confirma'] = 'Deseja realmente deletar esse arquivo?';
+
+$idioma['cadastro_tipodeclaracao'] = 'Administrar tipo de declaração';
+
+$idioma["btn_permissao_inserir"] = "Sem permissão para inserir";
+$idioma["btn_variaveis_imagens"] = "&nbsp;Variáveis das Imagens";
+$idioma["btn_outras_variaveis"] = "&nbsp;Outras Variáveis ";
+$idioma["tabela_variaveis_imagens"] = "Imagens";
+$idioma["tabela_imagens_vazio"] = "Nenhuma imagem cadastrada...";
+
+$idioma["visualizar"] = "Visualizar";
+$idioma["tabela_visualizar_imagem_tooltip"] = "Visualizar imagem cadastrada.";
+
+$idioma["form_associar"] = "Copie a(s) variável(is) da(s) imagem(ns), adicionada(s) na aba \"Imagens\", e cole no campo corpo do email para montar o corpo do email da pesquisa.";
+?>

@@ -1,0 +1,63 @@
+<?php
+$idioma["titulo_opcao_cadastar"] = "Cadastrar";
+$idioma["titulo_opcao_editar"] = "Editar";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["modificar_sucesso"] = "Loca de prova modificado com sucesso.";
+$idioma["legendadadosdados"] = "Dados da Unidade";
+$idioma["nome_vazio"] = "Nome deve ser preenchido.";
+$idioma["form_nome"] = "Nome:";
+$idioma["form_sindicato"] = "Estado:";
+$idioma["form_escola"] = "CFC:";
+$idioma["form_inscricao_estadual"] = "Inscrição estadual:";
+$idioma["form_inscricao_municipal"] = "Inscrição municipal:";
+$idioma["form_fax"] = "Fax:";
+$idioma["form_email"] = "E-mail:";
+$idioma["form_site"] = "Site:";
+$idioma["form_informacoes"] = "Informações:";
+
+$idioma["idcertificado"] = "Modelo de certificado:";
+$idioma['certificado_invalido'] = "Selecione um modelo de certificado para continuar.";
+$idioma["form_tipo"] = "Tipo do Documento:";
+$idioma["tipo_vazio"] = "Informe o tipo do documento";
+$idioma["form_cpf"] = "CPF:";
+$idioma["form_cpf_ajuda"] = "Somente será aceito um cadastro por CPF";
+$idioma["cpf_vazio"] = "Informe um CPF";
+$idioma["cpf_utilizado"] = "O CPF informado já está sendo utilizado por outra pessoa";
+$idioma["cpf_invalido"] = "Documento inválido.";
+$idioma["form_cnpj"] = "CNPJ:";
+$idioma["form_cnpj_ajuda"] = "Somente será aceito um cadastro por CNPJ";
+$idioma["cnpj_vazio"] = "Informe um CNPJ";
+$idioma["cnpj_utilizado"] = "O CNPJ informado já está sendo utilizado por outra pessoa";
+$idioma["cnpj_invalido"] = "CNPJ inválido.";
+$idioma["form_quantidade_pessoas_comportadas"] = "Avaliação presencial:";
+$idioma["form_quantidade_pessoas_comportadas_ajuda"] = "Informe a quantidade máxima de alunos para realização de provas presenciais.";
+$idioma["quantidade_pessoas_comportadas_vazio"] = "Informe a quantidade máxima de alunos para realização de provas presenciais.";
+$idioma["nome_vazio"] = "Informe o nome da Unidade.";
+$idioma["nome_utilizado"] = "O nome informado já está sendo utilizado por outra Unidade.";
+$idioma["sindicato_vazio"] = "Informe o estado da Unidade.";
+$idioma["form_selecione_sindicato"] = "Selecione uma estado";
+$idioma["form_selecione_escola"] = "Selecione um CFC";
+$idioma["escola_vazio"] = "Informe o CFC da Unidade.";
+$idioma["form_telefone"] = "Telefone:";
+$idioma["form_cep"] = "CEP:";
+$idioma["form_logradouro"] = "Logradouro:";
+$idioma["form_endereco"] = "Endereço:";
+$idioma["form_bairro"] = "Bairro:";
+$idioma["form_numero"] = "Número:";
+$idioma["form_numero_ajuda"] = "Caso não tem número, informe \"Sem número\"";
+$idioma["form_complemento"] = "Complemento:";
+$idioma["form_idestado"] = "Estado:";
+$idioma["form_idcidade"] = "Cidade:";
+$idioma["form_ativo_painel"] = "Ativo no painel";
+$idioma["ativo_vazio"] = "Você precisa informar se está ativo ou não.";
+$idioma["form_ativo_ajuda"] = "Essa funcionalidade não remove do painel, somente oculta em relacionamentos com outras funcionalidades";
+
+$idioma["legendada_dados_gerente"] = "Dados do gerente";
+$idioma["form_gerente_nome"] = "Nome:";
+$idioma["form_gerente_telefone"] = "Telefone:";
+$idioma["form_gerente_celular"] = "Celular:";
+$idioma["form_gerente_email"] = "E-mail:";
+$idioma["email_invalido"] = "Informe um email válido";
+
+$idioma["cadastro_sindicato"] = "Administrar estados";
+?>

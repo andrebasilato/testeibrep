@@ -1,0 +1,3 @@
+<?php
+$idioma["modulo"] = "Relatórios";
+?>

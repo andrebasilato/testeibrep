@@ -1,0 +1,251 @@
+<?php
+$config["formulario_enquetes"] = array(
+  array(
+	"fieldsetid" => "dadosdoobjeto", // Titulo do formulario (referencia a variavel de idioma)
+	"legendaidioma" => "legendadadosdados", // Legenda do fomrulario (referencia a variavel de idioma)
+	"campos" => array( // Campos do formulario																						
+	  array(
+		"id" => "form_pergunta",
+		"nome" => "pergunta", 
+		"nomeidioma" => "form_pergunta",
+		"tipo" => "input",
+		"valor" => "pergunta",
+		"validacao" => array("required" => "pergunta_vazio"), 
+		"class" => "span8",
+		"banco" => true,
+		"banco_string" => true,
+	  ),
+	  array(
+		"id" => "form_exibir_ava",
+		"nome" => "exibir_ava",
+		"nomeidioma" => "form_exibir_ava",
+		"tipo" => "select",
+		"array" => "sim_nao", // Array que alimenta o select
+		"class" => "span2", 
+		"valor" => "exibir_ava",
+		"validacao" => array("required" => "exibir_ava_vazio"),
+		"ajudaidioma" => "form_exibir_ava_ajuda",
+		"banco" => true,
+		"banco_string" => true
+	  ),
+	  array(
+		"id" => "idava_enquete", // Id do atributo HTML
+		"nome" => "idava", // Name do atributo HTML
+		"tipo" => "hidden", // Tipo do input
+		"valor" => 'return $this->url["3"];',
+		"banco" => true
+	  ),
+	)
+  )								  
+);
+						
+$config["listagem_enquetes"] = array(
+  array(
+	"id" => "idenquete",
+	"variavel_lang" => "tabela_idenquete", 
+	"tipo" => "banco", 
+	"coluna_sql" => "e.idenquete", 
+	"valor" => "idenquete", 
+	"busca" => true,
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_metodo" => 1,
+	"tamanho" => 60
+  ),
+  array(
+	"id" => "pergunta", 
+	"variavel_lang" => "tabela_pergunta",
+	"tipo" => "banco",
+	"evento" => "maxlength='100'",
+	"coluna_sql" => "e.pergunta",
+	"valor" => "pergunta",
+	"busca" => true,
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_metodo" => 2
+  ),
+  array(
+	"id" => "exibir_ava", 
+	"variavel_lang" => "tabela_exibir_ava", 
+	"tipo" => "php",
+	"coluna_sql" => "e.exibir_ava", 
+	"valor" => 'if($linha["exibir_ava"] == "S") {
+				  return "<span data-original-title=\"".$idioma["ativo"]."\" class=\"label label-success\" data-placement=\"left\" rel=\"tooltip\">A</span>";
+				} else {
+				  return "<span data-original-title=\"".$idioma["inativo"]."\" class=\"label label-important\" data-placement=\"left\" rel=\"tooltip\">I</span>";
+				}',
+	"busca" => true,
+	"busca_tipo" => "select",
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_array" => "ativo",
+	"busca_metodo" => 1,
+	"tamanho" => 60
+  ), 								  				
+  array(
+	"id" => "data_cad", 
+	"variavel_lang" => "tabela_datacad", 
+	"coluna_sql" => "e.data_cad",
+	"tipo" => "php", 
+	"valor" => 'return formataData($linha["data_cad"],"br",1);',
+	"tamanho" => "140"
+  ), 
+  array(
+	"id" => "opcoes", 
+	"variavel_lang" => "tabela_opcoes", 
+	"tipo" => "php", 
+	"valor" => 'return "<a class=\"btn dropdown-toggle btn-mini\" data-original-title=\"".$idioma["tabela_opcoes_tooltip"]."\" href=\"/".$this->url["0"]."/".$this->url["1"]."/".$this->url["2"]."/".$this->url["3"]."/".$this->url["4"]."/".$linha["idenquete"]."/opcoes\" data-placement=\"left\" rel=\"tooltip facebox\">".$idioma["tabela_opcoes"]."</a>"',
+	"busca_botao" => true,
+	"tamanho" => "80"
+  ) 
+ );
+						   						   
+$linhaObj->Set("config",$config);						   
+include("../classes/avas.enquetes.class.php");
+		
+$linhaObj = new Enquetes();
+$linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|51");	
+	
+$linhaObj->Set("idusuario",$usuario["idusuario"]);
+$linhaObj->Set("monitora_onde",$config["monitoramento"]["onde_enquetes"]);
+$linhaObj->Set("idava",$url[3]);
+
+$linhaObj->config["banco"] = $config["banco_enquetes"];
+$linhaObj->config["formulario"] = $config["formulario_enquetes"];
+
+if($_POST["acao"] == "salvar_enquete"){
+  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+		
+  if($_FILES) {
+	foreach($_FILES as $ind => $val) {
+	  $_POST[$ind] = $val;
+	}
+  }
+  $linhaObj->Set("post",$_POST);		
+  if($_POST[$config["banco_enquetes"]["primaria"]]) 
+	$salvar = $linhaObj->ModificarEnquete();
+  else 
+	$salvar = $linhaObj->CadastrarEnquete();
+  
+  if($salvar["sucesso"]){
+	if($_POST[$config["banco_enquetes"]["primaria"]]) {
+	  $linhaObj->Set("pro_mensagem_idioma","modificar_sucesso");
+	  $linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]."/".$url[5]."/".$url[6]);
+	} else {
+	  $linhaObj->Set("pro_mensagem_idioma","cadastrar_sucesso");
+	  $linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]);
+	}
+	$linhaObj->Processando();
+  }
+} elseif($_POST["acao"] == "remover_enquete") {
+  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|53");
+  $linhaObj->Set("post",$_POST);
+  $remover = $linhaObj->RemoverEnquete();
+  if($remover["sucesso"]){
+	$linhaObj->Set("pro_mensagem_idioma","remover_sucesso");
+	$linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]);
+	$linhaObj->Processando();
+  }
+} elseif($_POST["acao"] == "cadastrar_opcao"){
+  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+  $linhaObj->Set("id",intval($url[5]));
+  $linhaObj->Set("post",$_POST);
+  $salvar = $linhaObj->CadastrarOpcoes();
+
+  if($salvar["sucesso"]){
+	$linhaObj->Set("pro_mensagem_idioma","cadastrar_opcao_sucesso");
+	$linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]."/".$url[5]."/".$url[6]);
+	$linhaObj->Processando();
+  }
+} elseif($_POST["acao"] == "remover_opcao"){
+  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+
+  $linhaObj->Set("post",$_POST);
+  $remover = $linhaObj->RemoverOpcao();
+
+  if($remover["sucesso"]){
+	$linhaObj->Set("pro_mensagem_idioma","remover_opcao_sucesso");
+	$linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]."/".$url[5]."/".$url[6]);
+	$linhaObj->Processando();
+  }
+} elseif($_POST["acao"] == "editar_opcao"){
+  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+  $linhaObj->Set("id",intval($url[5]));
+  $linhaObj->Set("post",$_POST);
+  $editar = $linhaObj->ModificarOpcoes();
+
+  if($editar["sucesso"]){
+	$linhaObj->Set("pro_mensagem_idioma","editar_opcao_sucesso");
+	$linhaObj->Set("url","/".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]."/".$url[5]."/".$url[6]);
+	$linhaObj->Processando();
+  }
+}
+
+if(isset($url[5])){			
+  if($url[5] == "cadastrar") {
+	$linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+	include("idiomas/".$config["idioma_padrao"]."/formulario.enquetes.php");
+	include("telas/".$config["tela_padrao"]."/formulario.enquetes.php");
+	exit();
+  } else {	
+	$linhaObj->Set("id",intval($url[5]));
+	$linhaObj->Set("campos","e.*, a.nome as ava");	
+	$linha = $linhaObj->RetornarEnquete();
+
+	if($linha) {
+	  switch($url[6]) {
+		case "editar":			
+		  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+		  include("idiomas/".$config["idioma_padrao"]."/formulario.enquetes.php");
+		  include("telas/".$config["tela_padrao"]."/formulario.enquetes.php");
+		break;
+		case "enquentesopcoes":			
+		  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|52");
+		  $linhaObj->Set("ordem","asc");
+		  $linhaObj->Set("limite",-1);
+		  $linhaObj->Set("ordem_campo","ordem");
+		  $linhaObj->Set("campos","eo.*, e.pergunta, a.nome as ava");	
+		  $opcoes = $linhaObj->ListarTodosEnquetesOpcoes();		
+		  include("idiomas/".$config["idioma_padrao"]."/index.enquetes.opcoes.php");
+		  include("telas/".$config["tela_padrao"]."/index.enquetes.opcoes.php");
+		break;
+		case "remover":			
+		  $linhaObj->verificaPermissao($perfil["permissoes"], $url[2]."|53");
+		  include("idiomas/".$config["idioma_padrao"]."/remover.enquetes.php");
+		  include("telas/".$config["tela_padrao"]."/remover.enquetes.php");
+		break;
+		case "opcoes":			
+		  include("idiomas/".$config["idioma_padrao"]."/opcoes.enquetes.php");
+		  include("telas/".$config["tela_padrao"]."/opcoes.enquetes.php");
+		break;
+		case "download":
+		  include("telas/".$config["tela_padrao"]."/download.php");
+		break;
+		case "excluir":
+		  include("idiomas/".$config["idioma_padrao"]."/excluir.arquivo.php");
+		  $linhaObj->RemoverArquivo($url[2]."_".$url[4], $url[7], $linha, $idioma);
+		break;
+		case "json":
+		  include("idiomas/".$config["idioma_padrao"]."/json.php");
+		  include("telas/".$config["tela_padrao"]."/json.php");
+		break;		
+		default:
+		  header("Location: /".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]);
+		  exit();
+	  }				
+	} else {
+	  header("Location: /".$url[0]."/".$url[1]."/".$url[2]."/".$url[3]."/".$url[4]);
+	  exit();
+	}			
+  }
+} else {
+  $linhaObj->Set("pagina",$_GET["pag"]);
+  if(!$_GET["ordem"]) $_GET["ordem"] = "desc";
+  $linhaObj->Set("ordem",$_GET["ord"]);
+  if(!$_GET["qtd"]) $_GET["qtd"] = 30;
+  $linhaObj->Set("limite",intval($_GET["qtd"]));
+  if(!$_GET["cmp"]) $_GET["cmp"] = $config["banco_enquetes"]["primaria"];
+  $linhaObj->Set("ordem_campo",$_GET["cmp"]);
+  $linhaObj->Set("campos","e.*, a.nome as ava");	
+  $dadosArray = $linhaObj->ListarTodosEnquetes();		
+  include("idiomas/".$config["idioma_padrao"]."/index.enquetes.php");
+  include("telas/".$config["tela_padrao"]."/index.enquetes.php");
+}
+?>

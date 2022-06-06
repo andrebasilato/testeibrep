@@ -1,0 +1,10 @@
+<? 
+$idioma["usuario_selecionado"] = "SMS selecionado:";
+$idioma["opcoes"] = "Opções";
+$idioma["editar"] = "Editar";
+$idioma["ficha"] = "Imprimir ficha";
+$idioma["remover"] = "Remover";
+$idioma["opcao_permissao"] = "Sem permissão";
+$idioma['email_cursos'] = "Associar cursos";
+$idioma['email_ofertas'] = "Associar ofertas";
+?>

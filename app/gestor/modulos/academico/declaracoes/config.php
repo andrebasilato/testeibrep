@@ -1,0 +1,32 @@
+<?php
+
+$config["funcionalidade"] = "funcionalidade";
+$config["funcionalidade_icone_32"] = "/assets/icones/preto/32/contratos_32.png";
+$config["acoes"][1] = "visualizar";
+$config["acoes"][2] = "cadastrar_modificar";
+$config["acoes"][3] = "remover";
+$config["acoes"][4] = "visualizar_sindicatos";
+$config["acoes"][5] = "associar_sindicatos";
+$config["acoes"][6] = "remover_sindicatos";
+$config["acoes"][8] = "visualizar_imagens";
+$config["acoes"][9] = "cadastrar_imagem";
+$config["acoes"][10] = "remover_imagem";
+$config["acoes"][11] = "visualizar_cursos";
+$config["acoes"][12] = "associar_cursos";
+$config["acoes"][13] = "remover_cursos";
+
+$config["monitoramento"]["onde"] = "106";
+
+// Array de configuração de banco de dados (nome da tabela, chave primaria, campos com valores fixos, campos unicos)
+$config["banco"] = array("tabela" => "declaracoes",
+						 "primaria" => "iddeclaracao",
+						 "campos_insert_fixo" => array("data_cad" => "now()", 
+						 							   "ativo" => "'S'"
+													  ),
+						 "campos_unicos" => array(array("campo_banco" => "nome", 
+												  		"campo_form" => "nome", 
+														"erro_idioma" => "nome_utilizado"
+													   )
+												 )
+						);
+?>

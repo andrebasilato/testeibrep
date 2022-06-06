@@ -1,0 +1,20 @@
+<?php
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["remover_vazio"] = "Você precisa preencher os campos abaixo.";
+$idioma["usuario_selecionado"] = "Subcategoria selecionada: <strong> %s</strong>";
+$idioma["titulo_opcao"] = "Associar Sindicatos";
+$idioma["informacoes"] = "Digite a sigla da sindicato para associa-la a subcategoria";
+$idioma["confirmacao"] = "Sindicato(s):";
+$idioma["confirmacao_formulario"] = "Desejo remover as informações da categoria selecionada.";
+$idioma["nota"] = "<strong>Obs:</strong> Você pode procurar uma sindicato pelo seu nome.";
+$idioma["remover"] = "Salvar";
+$idioma["cancelar"] = "Cancelar";
+$idioma["sem_informacao"] = "Nenhuma informação foi encontrada.";
+$idioma["listagem_id"] = "Id";
+$idioma["listagem_nome"] = "Nome";
+$idioma["listagem_opcoes"] = "Opções";
+$idioma["confirmar_remocao"] = "Deseja realmente remover a associação dessa sindicato com essa subcategoria?";
+$idioma["mensagem_select"] = "Digite a sigla  das sindicatos, selecione e associe a subcategoria...";
+$idioma["btn_remover_permissao_excluir"] = "Sem permissão...";
+$idioma["btn_remover"] = "Remover sindicato";
+$idioma["btn_sair"] = "Sair";

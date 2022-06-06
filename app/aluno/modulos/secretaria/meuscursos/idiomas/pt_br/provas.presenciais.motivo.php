@@ -1,0 +1,2 @@
+<?php
+$idioma['fechar'] = 'FECHAR';

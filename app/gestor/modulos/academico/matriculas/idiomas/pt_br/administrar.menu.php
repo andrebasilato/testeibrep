@@ -1,0 +1,22 @@
+<?php
+$idioma['menu_informacoes'] = 'Informações Gerais';
+$idioma['menu_financeiro_matricula'] = 'Financeiro';
+$idioma['menu_documentos_matricula'] = 'Documentos';
+$idioma['menu_contratos_matricula'] = 'Contratos';
+$idioma['menu_declaracoes_matricula'] = 'Declarações';
+$idioma['menu_mensagens_matricula'] = 'Mensagens';
+$idioma['menu_notas_matricula'] = 'Notas';
+$idioma['menu_historico_matricula'] = 'Histórico';
+$idioma['menu_reconhecimento'] = 'Biometria Facial';
+$idioma['menu_pasta_matricula'] = 'Pasta Virtual';
+$idioma['menu_material_didatico'] = 'Material Didático';
+$idioma['btn_acessar_como'] = 'Acessar Como (Painel aluno)';
+$idioma['btn_dossie'] = 'Dossiê';
+$idioma['btn_boletim'] = 'Boletim';
+$idioma['btn_historico_escolar'] = 'Histórico do CFC';
+$idioma['btn_gerar_diploma'] = 'Gerar diploma';
+$idioma['btn_enviar_credito'] = 'Enviar Crédito';
+$idioma['btn_reenviar_credito'] = 'Reenviar Crédito';
+$idioma['btn_enviar_certificado'] = 'Enviar Certificado';
+$idioma['btn_reenviar_certificado'] = 'Reenviar Certificado';
+$idioma['btn_reenviar_cancelamento'] = 'Reenviar Cancelamento';

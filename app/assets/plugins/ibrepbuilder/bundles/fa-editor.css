@@ -1,0 +1,32 @@
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-bold:before {
+    content: "\F032";
+}
+.fa-italic:before {
+    content: "\F033";
+}
+.fa-underline:before {
+    content: "\F0CD";
+}
+.fa-chain:before, .fa-link:before {
+    content: "\F0C1";
+}
+.fa-list-ol:before {
+    content: "\F0CB";
+}
+.fa-list-ul:before {
+    content: "\F0CA";
+}
+.fa-header:before {
+    content: "H";
+}
+.fa-eraser:before {
+    content: "\F12D";
+}

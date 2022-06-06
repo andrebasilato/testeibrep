@@ -1,0 +1,116 @@
+<?php
+// Array de configuração para a listagem	
+$config["listagem"] = array(
+  array(
+	"id" => "idmotivo",
+	"variavel_lang" => "tabela_idmotivo", 
+	"tipo" => "php", 
+	"coluna_sql" => "idmotivo", 
+	"valor" => '
+			$diferenca = dataDiferenca($linha["data_cad"], date("Y-m-d H:i:s"), "H");
+			if($diferenca > 24) {
+				return "<span title=\"$diferenca\">".$linha["idmotivo"]."</span>";
+			} else {
+				return "<span title=\"$diferenca\">".$linha["idmotivo"]."</span> <i class=\"novo\"></i>";
+			}
+			', 
+	"busca" => true,
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_metodo" => 1,
+	"tamanho" => 80
+  ),								  
+  array(
+	"id" => "nome", 
+	"variavel_lang" => "tabela_nome",
+	"tipo" => "banco",
+	"evento" => "maxlength='100'",
+	"coluna_sql" => "nome",
+	"valor" => "nome",
+	"busca" => true,
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_metodo" => 2
+  ),	
+  array(
+	"id" => "retirar_comissao", 
+	"variavel_lang" => "tabela_retirar_comissao", 
+	"tipo" => "php",
+	"coluna_sql" => "retirar_comissao", 
+	"valor" => 'if($linha["retirar_comissao"] == "S") {
+				  return "<span data-original-title=\"".$idioma["retirar_comissao_sim"]."\" class=\"label label-success\" data-placement=\"left\" rel=\"tooltip\">Sim</span>";
+				} else {
+				  return "<span data-original-title=\"".$idioma["retirar_comissao_nao"]."\" class=\"label label-important\" data-placement=\"left\" rel=\"tooltip\">Não</span>";
+				}',
+	"busca" => true,
+	"busca_tipo" => "select",
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_array" => "sim_nao",
+	"busca_metodo" => 1,
+	"tamanho" => 60
+  ),							  
+ array(
+	"id" => "cancela_automatico", 
+	"variavel_lang" => "tabela_cancela_automatico", 
+	"tipo" => "php",
+	"coluna_sql" => "cancela_automatico", 
+	"valor" => 'if($linha["cancela_automatico"] == "S") {
+				  return "<span data-original-title=\"".$idioma["cancela_automatico_sim"]."\" class=\"label label-success\" data-placement=\"left\" rel=\"tooltip\">Sim</span>";
+				} else {
+				  return "<span data-original-title=\"".$idioma["cancela_automatico_nao"]."\" class=\"label label-important\" data-placement=\"left\" rel=\"tooltip\">Não</span>";
+				}',
+	"busca" => true,
+	"busca_tipo" => "select",
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_array" => "sim_nao",
+	"busca_metodo" => 1,
+	"tamanho" => 60
+  ),							  
+  array(
+	"id" => "ativo_painel", 
+	"variavel_lang" => "tabela_ativo_painel", 
+	"tipo" => "php",
+	"coluna_sql" => "ativo_painel", 
+	"valor" => 'if($linha["ativo_painel"] == "S") {
+				  return "<span data-original-title=\"".$idioma["ativo"]."\" class=\"label label-success\" data-placement=\"left\" rel=\"tooltip\">A</span>";
+				} else {
+				  return "<span data-original-title=\"".$idioma["inativo"]."\" class=\"label label-important\" data-placement=\"left\" rel=\"tooltip\">I</span>";
+				}',
+	"busca" => true,
+	"busca_tipo" => "select",
+	"busca_class" => "inputPreenchimentoCompleto",
+	"busca_array" => "ativo",
+	"busca_metodo" => 1,
+	"tamanho" => 60
+  ),
+  array(
+      "id" => "padrao",
+      "variavel_lang" => "tabela_padrao",
+      "tipo" => "php",
+      "coluna_sql" => "padrao",
+      "valor" => 'if($linha["padrao"] == "S") {
+				  return "<span data-original-title=\"".$idioma["padrao"]."\" class=\"label label-warning\" data-placement=\"left\" rel=\"tooltip\">P</span>";
+				} ',
+      "busca" => true,
+      "busca_tipo" => "select",
+      "busca_class" => "inputPreenchimentoCompleto",
+      "busca_array" => "sim_nao",
+      "busca_metodo" => 1,
+      "tamanho" => 60
+  ),
+  array(
+	"id" => "data_cad", 
+	"variavel_lang" => "tabela_datacad", 
+	"tipo" => "php", 
+	"coluna_sql" => "data_cad",
+	"valor" => 'return formataData($linha["data_cad"],"br",1);',
+	"tamanho" => "140"
+  ),
+  array(
+	"id" => "opcoes", 
+	"variavel_lang" => "tabela_opcoes", 
+	"tipo" => "php", 
+	"valor" => 'return "<a class=\"btn dropdown-toggle btn-mini\" data-original-title=\"".$idioma["tabela_opcoes_tooltip"]."\" href=\"/".$this->url["0"]."/".$this->url["1"]."/".$this->url["2"]."/".$linha["idmotivo"]."/opcoes\" data-placement=\"left\" rel=\"tooltip facebox\">".$idioma["tabela_opcoes"]."</a>"',
+	"busca_botao" => true,
+	"tamanho" => "80"
+  ) 			
+);						   
+?>

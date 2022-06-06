@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+.star-rating {
+	float:left;
+	width:17px;
+	height:15px;
+	text-indent:-999em;
+	cursor:pointer;
+	display:block;
+	background:transparent;
+	overflow:hidden;
+	background:url(star.gif) no-repeat 0 0px;
+}
+.rating-cancel {
+	display:block;
+	width:16px;
+	height:100%;
+	background-position:0 0px;
+	border:0;
+	background:url(delete.gif) no-repeat 0 -16px;
+}
+.star-rating-on {
+	background-position:0 -16px!important
+}
+.star-rating-hover {
+	background-position:0 -32px
+}
+.selected {}

@@ -1,0 +1,29 @@
+<?
+$idioma["pagina_titulo"] = "Tipos de documentos";
+$idioma["pagina_subtitulo"] = "Relação de tipos de documentos";
+$idioma["nav_inicio"] = "Início";
+$idioma["nav_configuracoes"] = "Configurações";
+$idioma["nav_formulario"] = "Formulário";
+$idioma["hora_servidor"] = "Horário do servidor:";
+$idioma["btn_salvar"] = "Salvar";
+$idioma["btn_cancelar"] = "Cancelar";
+$idioma["btn_remover"] = "Remover";
+$idioma["btn_remover_permissao_excluir"] = "Sem permissão para excluir";
+$idioma["btn_permissao_inserir"] = "Sem permissão para inserir";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["sair_edicao"] = "Sair";
+$idioma["titulo_opcao"] = "Associar Cursos nos quais o documento será obrigatório";
+$idioma["form_todos"] = "Obrigatório em todos os cursos.";
+$idioma["form_todos_ajuda"] = "Selecionando essa opção o tipo de documento será obrigatório em todos os cursos.";
+$idioma["btn_adicionar"] = "Adicionar";
+$idioma["form_curso"] = "Selecione um curso e clique em Adicionar para associá-lo ao tipo:";
+$idioma["associar_curso_sucesso"] = "Curso(s) associado(s) com sucesso!";
+$idioma["remover_curso_sucesso"] = "Associação do curso removida com sucesso!";
+$idioma["todos_curso_sucesso"] = "Modificação de obrigatoriedade do tipo realizada com sucesso!";
+$idioma["sem_informacao"] = "Nenhuma informação foi encontrada.";
+$idioma["listagem_id"] = "ID";
+$idioma["listagem_nome"] = "Nome";
+$idioma["listagem_opcoes"] = "Opções";
+$idioma["confirmar_remocao"] = "Deseja realmente remover a associação desse curso com esse tipo?";
+$idioma["mensagem_select"] = "Digite o nome dos cursos, selecione e associe ao tipo...";
+?>

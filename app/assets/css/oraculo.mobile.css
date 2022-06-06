@@ -1,0 +1,125 @@
+.container-fluid {
+	min-width:280px !important;
+}
+.container-fluid {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.clearfix {
+ *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+#logo h1 a {
+	margin-left: 18px;
+}
+body {
+	padding-top: 35px;
+}
+.inputGrande {
+	width:98% !important;
+}
+.nav-collapse {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.page-header h1 small {
+	display: block;
+	line-height: 18px;
+}
+input, select, textarea {
+	/* width: 100% !important; */	
+}
+input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+	display: block;
+	/* width: 100%; */
+	min-height: 28px;
+	/* Make inputs at least the height of their button counterpart */
+	  
+		/* Makes inputs behave like true block-level elements */
+	  
+		-webkit-box-sizing: border-box;
+	/* Older Webkit */
+	  
+		-moz-box-sizing: border-box;
+	/* Older FF */
+	  
+		-ms-box-sizing: border-box;
+	box-sizing: border-box;/* CSS3 spec*/
+}
+.input-prepend input[class*="span"], .input-append input[class*="span"] {
+	width: auto;
+}
+input[type="checkbox"], input[type="radio"] {
+	border: 1px solid #ccc;
+}
+.box-conteudo {
+	padding:5px !important;
+}
+.form-horizontal .control-group > label {
+	float: none;
+	width: auto;
+	padding-top: 0;
+	text-align: left;
+}
+.form-horizontal .controls {
+	margin-left: 0;
+}
+.form-horizontal .control-list {
+	padding-top: 0;
+}
+.form-horizontal .form-actions {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.modal {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	width: auto;
+	margin: 0;
+}
+.modal.fade.in {
+	top: auto;
+}
+.modal-header .close {
+	padding: 10px;
+	margin: -10px;
+}
+.carousel-caption {
+	position: static;
+}
+.brand {
+	font-size:8px !important;
+	padding-left: 8px;
+}
+#menuLogo {
+	height: 60px;
+}
+.page-header h1 {
+	font-size:15px;
+}
+.page-header h1 small {
+	font-size:10px;
+}
+#divMenu {
+	z-index: 20000;
+	margin:0px 0px 0px 180px;
+	height:60px;
+	min-width:60px;
+	padding:0px 0px 0px 20px;
+	font-size:8px;
+	min-width: 80px !important;
+}
+#menu li a {
+	font-size:8px;
+}

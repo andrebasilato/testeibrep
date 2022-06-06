@@ -1,0 +1,63 @@
+/*
+ * Didi Calendario v1.0 Stylesheet
+ * Copyright (c) 2012 Diandson Cardoso
+ * Data: 22 6 2012 16:33
+ *
+ */
+/*
+html {font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+a:focus {outline: thin dotted #333;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+a:hover,a:active {outline: 0;}
+body {margin: 0;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 13px;line-height: 18px;color: #333333;background-color: #ffffff;}
+a {color: #0088cc;text-decoration: none;}
+a:hover {color: #005580;text-decoration: underline;}
+*/
+#calendar {width: 900px;margin: 0 auto;}
+.cdi {direction: ltr;text-align: left;}
+.cdi table {border-collapse: collapse;border-spacing: 0;}
+html .cdi, .cdi table {font-size: 1em;}
+.cdi td, .cdi th {padding: 0;vertical-align: top;}
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+table.cdi-border-separate {border-collapse: separate;}
+.cdi-border-separate th, .cdi-border-separate td {border-width: 1px 0 0 1px;}
+.cdi-border-separate th.cdi-last, .cdi-border-separate td.cdi-last {border-right-width: 1px;}
+.cdi-border-separate tr.cdi-last th, .cdi-border-separate tr.cdi-last td {border-bottom-width: 1px;}
+.cdi-border-separate tbody tr.cdi-first td, .cdi-border-separate tbody tr.cdi-first th {border-top-width: 0;}
+
+/* Content
+------------------------------------------------------------------------*/
+.cdi-content {clear: both;}
+.cdi-view {width: 100%;overflow: hidden;}
+
+/* Header
+------------------------------------------------------------------------*/
+.cdi-header td {white-space: nowrap;}
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+.cdi-grid th {text-align: center;}
+.cdi-grid .cdi-day-number {	padding: 5px 2px;}
+.cdi-grid .cdi-other-month .cdi-day-number {opacity: 0.3;filter: alpha(opacity=30);}
+.cdi-grid .cdi-day-content {clear: both;padding: 2px 2px 1px;}
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+.cdi-widget-header, /* <th>, usually */ .cdi-widget-content { /* <td>, usually */
+border: 1px solid #ccc; }
+/*
+.label,.badge {font-size: 10.998px;font-weight: bold;line-height: 14px;color: #ffffff;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);white-space: nowrap;vertical-align: baseline;background-color: #999999;}
+.badge {padding: 1px 9px 2px;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;}
+a.label:hover,a.badge:hover {color: #ffffff;text-decoration: none;cursor: pointer;}
+.label-important,.badge-important {background-color: #b94a48;}
+.label-important[href],.badge-important[href] {background-color: #953b39;}
+.label-warning,.badge-warning {background-color: #f89406;}
+.label-warning[href],.badge-warning[href] {background-color: #c67605;}
+.label-success,.badge-success {background-color: #468847;}
+.label-success[href],.badge-success[href] {background-color: #356635;}
+.label-info,.badge-info {background-color: #3a87ad;}
+.label-info[href],.badge-info[href] {background-color: #2d6987;}
+.label-inverse,.badge-inverse {background-color: #333333;}
+.label-inverse[href],.badge-inverse[href] {background-color: #1a1a1a;}
+*/

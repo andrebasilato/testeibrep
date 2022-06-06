@@ -1,0 +1,21 @@
+﻿<?php
+$idioma["btn_remover_permissao_excluir"] = "Sem permissão para excluir";
+$idioma["btn_permissao_inserir"] = "Sem permissão para inserir";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["titulo_opcao"] = "Sindicatos associados";
+$idioma["btn_adicionar"] = "Adicionar";
+$idioma["form_sindicato"] = "Informe a sigla do sindicato e clique em adicionar para associá-lo ao centro de custo:";
+$idioma["associar_sindicato_sucesso"] = "Sindicato(s) associado(s) com sucesso!";
+$idioma["remover_sindicato_sucesso"] = "Associação do sindicato removida com sucesso!";
+$idioma["sem_informacao"] = "Nenhuma informação foi encontrada.";
+$idioma["listagem_id"] = "Id";
+$idioma["listagem_nome"] = "Sindicato";
+$idioma["listagem_opcoes"] = "Opções";
+$idioma["confirmar_remocao"] = "Deseja realmente remover a associação desse sindicato com esse centro de custo?";
+$idioma["mensagem_select"] = "Digite a sigla dos sindicatos, selecione e associe ao centro de custo...";
+$idioma["btn_remover"] = "Remover sindicato";
+$idioma["editar"] = "Editar";
+$idioma["associar_usuarios"] = "Associar responsável ou dono.";
+$idioma["associar_usuarios_sem_permissao"] = "Você não possui permissão para associar um responsável ou dono";
+$idioma["associar_usuario_sucesso"] = "Associação realizada com sucesso";
+$idioma["nada_atualizado"] = "Nenhuma modificação realizada";

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PTSansNarrowRegular';
+    src: url('pt_sans-narrow-web-regular.eot');
+    src: url('pt_sans-narrow-web-regular.eot') format('embedded-opentype'),
+         url('pt_sans-narrow-web-regular.woff') format('woff'),
+         url('pt_sans-narrow-web-regular.ttf') format('truetype'),
+         url('pt_sans-narrow-web-regular.svg#PTSansNarrowRegular') format('svg');
+}

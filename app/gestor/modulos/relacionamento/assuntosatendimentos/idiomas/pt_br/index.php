@@ -1,0 +1,29 @@
+<? 
+$idioma["informacoes"] = "Informações Encontradas: <strong>%s</strong>";
+$idioma["paginas"] = "Página <strong>%s</strong> de <strong>%s</strong> página(s). ";
+$idioma["tabela_idassunto"] = "Id.";
+$idioma["tabela_assunto"] = "Assunto";
+$idioma["tabela_subassunto"] = "Subassunto";
+$idioma["tabela_horas"] = "Horas";
+$idioma["tabela_situacao"] = "Sit.";
+$idioma["tabela_datacad"] = "Data de criação";
+$idioma["tabela_opcoes"] = "Opções";
+$idioma["tabela_sla"] = "SLA";
+$idioma["tabela_opcoes_tooltip"] = "Clique para ver as opções";
+$idioma["pag_anterior"] = "Anterior";
+$idioma["pag_proxima"] = "Próxima";
+$idioma["registros"] = "Quantidade de registros:";
+$idioma["exibir"] = "Exibir";
+$idioma["buscar"] = "Buscar";
+$idioma["buscar_em"] = " em ";
+$idioma["buscar_por"] = " Buscar por: ";
+$idioma["cadastrar_sucesso"] = "Assunto cadastrado com sucesso.";
+$idioma["modificar_sucesso"] = "Assunto modificado com sucesso.";
+$idioma["remover_sucesso"] = "Assunto removido com sucesso.";
+$idioma["cadastrar_sucesso_subassunto"] = "Subassunto cadastrado com sucesso.";
+$idioma["modificar_sucesso_subassunto"] = "Subassunto modificado com sucesso.";
+$idioma["remover_sucesso_subassunto"] = "Subassunto removido com sucesso.";
+$idioma["ativo"] = "Objeto ativo no painel.";
+$idioma["inativo"] = "Objeto inativo no painel.";
+$idioma["tabela_ativo_painel"] = "Sit.";
+?>

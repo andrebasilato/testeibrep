@@ -1,0 +1,27 @@
+<?php
+$idioma["titulo_opcao_cadastar"] = "Cadastrar";
+$idioma["titulo_opcao_editar"] = "Editar";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["modificar_sucesso"] = "Disciplina modificada com sucesso.";
+$idioma["legendadadosdados"] = "Dados da disciplina";
+$idioma["form_nome"] = "Nome:";
+$idioma["nome_vazio"] = "Informe o nome da disciplina.";
+$idioma["nome_utilizado"] = "O nome informado já está sendo utilizada por outra disciplina.";
+$idioma["form_codigo"] = "Código:";
+$idioma["codigo_vazio"] = "Informe o código da disciplina.";
+$idioma["form_tipo"] = "Tipo:";
+$idioma["form_avaliacaoprese"] = "Avaliação Presencial:";
+$idioma["tipo_vazio"] = "Informe o tipo da disciplina.";
+$idioma["avaliacaoprese_vazio"] = "Informe se a disciplina possui Prova Presencial.";
+$idioma["form_carga_horaria"] = "Carga horária:";
+$idioma["carga_horaria_vazio"] = "Informe a carga horária da disciplina.";
+$idioma["form_pratica"] = "Prática / Encontros presenciais / Avaliação:";
+$idioma["pratica_vazio"] = "Informe a carga horária de prática / encontros presenciais / avaliação da disciplina.";
+$idioma["form_teorica"] = "Teoria / Estudos independentes:";
+$idioma["teorica_vazio"] = "Informe a carga horária de teoria / estudos independentes da disciplina.";
+$idioma["form_laboratorio"] = "Laboratório:";
+$idioma["laboratorio_vazio"] = "Informe a carga horária de laboratório da disciplina.";
+$idioma["form_observacoes"] = "Observações:";
+$idioma["form_ativo_painel"] = "Ativo no painel";
+$idioma["ativo_vazio"] = "Você precisa informar se está ativo ou não.";
+$idioma["form_ativo_ajuda"] = "Essa funcionalidade não remove do painel, somente oculta em relacionamentos com outras funcionalidades";

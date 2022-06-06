@@ -1,0 +1,99 @@
+
+.btn-light-lp {
+    display: inline-block;
+    font-family: "Lato", Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    outline: none;
+    line-height: 1;
+    padding: 1.125rem 2.25rem;
+    font-size: 1.875rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    color: #808080;
+    background-color: #f8f9fa;
+    border: 2px solid transparent;
+    border-color: #808080;
+    border-radius: 0.45rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-light-lp:hover {
+    background-color: #808080;
+    color: #f8f9fa;
+}
+
+.btn-success-lp {
+    display: inline-block;
+    font-family: "Lato", Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    outline: none;
+    line-height: 1;
+    padding: 1.125rem 2.25rem;
+    font-size: 1.875rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: not-allowed;
+    opacity: .65;
+    outline: none;
+    color: #fff;
+    background-color: #579D1B;
+    border: 2px solid transparent;
+    border-color: #579D1B;
+    border-radius: 0.45rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-success-lp:active {
+    opacity: 0.8;
+}
+
+.btn-danger-lp {
+    display: inline-block;
+    font-family: "Lato", Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    outline: none;
+    line-height: 1;
+    padding: 1.125rem 2.25rem;
+    font-size: 1.875rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: not-allowed;
+    opacity: .65;
+    outline: none;
+    color: #fff;
+    background-color: #e65252;
+    border: 2px solid transparent;
+    border-color: #e65252;
+    border-radius: 0.45rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-danger-lp:active {
+    opacity: 0.8;
+}
+
+.form-control-lp {
+    font-family: Verdana, Geneva, sans-serif;
+    border: 1px solid #CCC;
+    font-size: 1.4rem;
+    display: block;
+    width: 100%;
+    padding: 1.0rem 1.4rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}

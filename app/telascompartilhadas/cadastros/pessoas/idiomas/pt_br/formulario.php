@@ -1,0 +1,146 @@
+<?php
+$idioma["titulo_opcao_cadastar"] = "Cadastrar";
+$idioma["titulo_opcao_editar"] = "Editar";
+$idioma["form_erros"] = "Por favor corrija o(s) erro(s) abaixo: ";
+$idioma["modificar_sucesso"] = "Aluno modificado com sucesso.";
+$idioma["legendadadosdados"] = "Dados do aluno";
+$idioma["form_nome"] = "Nome:";
+$idioma["nome_vazio"] = "Informe o nome do aluno.";
+$idioma["form_sexo"] = "Gênero:";
+$idioma["sexo_vazio"] = "Informe o gênero do aluno.";
+$idioma["form_estadocivil"] = "Estado civil:";
+$idioma["estado_civil_vazio"] = "Informe o estado civil";
+$idioma["form_nascimento"] = "Data de nascimento:";
+$idioma["data_nasc_vazio"] = "Informe a data de nascimento";
+$idioma["form_nacionalidade"] = "Nacionalidade:";
+$idioma["nacionalidade_vazio"] = "Informe a nacionalidade";
+$idioma["form_naturalidade"] = "Naturalidade:";
+$idioma["form_naturalidade_ajuda"] = "Informe a cidade e o estado. Ex.: Aracaju - SE";
+$idioma["naturalidade_vazio"] = "Informe a naturalidade";
+
+$idioma["legenda_dados_documentos"] = "Documentos";
+$idioma["form_tipo"] = "Tipo do Documento";
+$idioma["tipo_vazio"] = "Informe o tipo do documento";
+$idioma["form_cpf"] = "CPF:";
+$idioma["form_cpf_ajuda"] = "Somente será aceito um cadastro por CPF";
+$idioma["cpf_vazio"] = "Informe um CPF";
+$idioma["cpf_utilizado"] = "O CPF informado já está sendo utilizado por outro aluno";
+$idioma["cpf_invalido"] = "Documento inválido.";
+$idioma["form_cnpj"] = "CNPJ:";
+$idioma["form_cnpj_ajuda"] = "Somente será aceito um cadastro por CNPJ";
+$idioma["cnpj_vazio"] = "Informe um CNPJ";
+$idioma["cnpj_utilizado"] = "O CNPJ informado já está sendo utilizado por outro aluno";
+$idioma["email_utilizado"] = "O e-mail informado já está sendo utilizado por outro aluno";
+$idioma["cnpj_invalido"] = "CNPJ inválido.";
+$idioma["form_rg"] = "RG:";
+$idioma["rg_vazio"] = "Informe o RG";
+$idioma["form_rne"] = "RNE:";
+$idioma["cnh_estado_origem_vazio"] = "Informe o estado de origem da CNH.";
+$idioma["form_rne_ajuda"] = "Registro Nacional de Estrangeiros";
+$idioma["form_orgao_emissor"] = "Órgão emissor:";
+$idioma["orgao_emissor_vazio"] = "Informe o orgao emissor";
+$idioma["form_data_emissao"] = "Data de emissão:";
+$idioma["form_razao_social"] = "Razao Social:";
+$idioma["form_nome_fantasia"] = "Nome Fantasia:";
+$idioma["form_representante"] = "Representante:";
+
+$idioma["form_cnh"] = "CNH:";
+$idioma["form_categoria"] = "Categoria:";
+$idioma["categoria_vazio"] = "Informe a Categoria";
+$idioma["cnh_vazio"] = "Informe a CNH";
+$idioma["form_data_primeira_habilitacao"] = "Data da Primeira Habilitação:";
+$idioma["form_cnh_data_emissao"] = "Data de Emissão da CNH:";
+$idioma["form_data_validade"] = "Data de Validade da CNH:";
+$idioma["ato_punitivo"] = "Renach:";
+$idioma["ato_punitivo_vazio"] = "Preencha o Renach";
+
+$idioma["legenda_dados_filiacao"] = "Filiação";
+$idioma["form_filiacao_mae"] = "Nome da Mãe:";
+$idioma["filiacao_mae_vazio"] = "Informe o nome da mãe";
+$idioma["form_filiacao_pai"] = "Nome do Pai:";
+
+$idioma["legenda_dados_endereco"] = "Endereço";
+$idioma["form_cep"] = "CEP:";
+$idioma["cep_vazio"] = "Informe o cep";
+$idioma["form_logradouro"] = "Logradouro:";
+$idioma["logradouro_vazio"] = "Informe o logradouro";
+$idioma["form_endereco"] = "Endereço:";
+$idioma["endereco_vazio"] = "Informe o endereço";
+$idioma["form_bairro"] = "Bairro:";
+$idioma["bairro_vazio"] = "Informe o bairro";
+$idioma["form_numero"] = "Número:";
+$idioma["form_numero_ajuda"] = "Caso não tem número, informe \"Sem número\"";
+$idioma["numero_vazio"] = "Informe o número";
+$idioma["form_complemento"] = "Complemento:";
+$idioma["complemento_vazio"] = "Informe o complemento";
+$idioma["form_idestado"] = "Estado:";
+$idioma["form_selecione_estado"] = "Escolha um estado";
+$idioma["form_idcidade"] = "Cidade:";
+$idioma["form_selecione_cidade"] = "Escolha uma cidade";
+
+$idioma["legenda_dados_contato"] = "Contato";
+$idioma["form_email"] = "E-mail:";
+$idioma["form_email_ajuda"] = "Será utilizado para o acesso ao painel e alertas do sistema.";
+$idioma["email_vazio"] = "Informe um email";
+$idioma["email_invalido"] = "Informe um email válido";
+$idioma["form_telefone"] = "Telefone:";
+$idioma["telefone_vazio"] = "Informe um telefone";
+$idioma["form_celular"] = "Celular:";
+$idioma["celular_vazio"] = "Informe um celular";
+$idioma['form_receber_email'] = 'Receber e-mail:';
+$idioma['receber_email_vazio'] = 'Informe se a pessoa irá receber email';
+
+$idioma["legendadadosdeacesso"] = "Senha de acesso";
+$idioma["form_senha"] = "Senha:";
+$idioma["form_senha_ajuda"] = " A senha deve ter no mínimo 8 caracteres e no máximo 30 caracteres entre letras e números.";
+$idioma["form_confirma"] = "Confirme:";
+$idioma["form_confirma_ajuda"] = "Confirme a sua senha.";
+$idioma["confirmacao_invalida"] = "A confirmação da senha não confere";
+$idioma["maximo_senha"] = "A senha deve conter no máximo 30 caracteres";
+$idioma["minimo_senha"] = "A senha deve conter no minimo 8 caracteres";
+
+$idioma["legendadadosbancarios"] = "Dados bancários";
+$idioma["form_banco"] = "Banco:";
+$idioma["form_contacorrente"] = "Conta:";
+$idioma["form_contacorrente_ajuda"] = "Caso o titular da conta seja o próprio aluno, não é necessário preencher os campos Titular e CPF da conta";
+$idioma["form_agencia"] = "Agência:";
+$idioma["form_banco_nome_titular"] = "Titular da conta:";
+$idioma["form_banco_cpf_titular"] = "CPF do titular da conta:";
+$idioma["cpf_titular_invalido"] = "CPF do titular da conta inválido.";
+$idioma["form_banco_observacoes"] = "Observações:";
+$idioma["form_facebook"] = "Facebook:";
+$idioma["form_disponivel_interacao"] = "Disponível para interação:";
+$idioma['disponivel_interacao_vazio'] = 'Escolha a opção sobre a interação do aluno.';
+$idioma["form_disponivel_interacao_ajuda"] = "Gostaria de estar disponivel para interação com outros alunos";
+$idioma["form_escolaridade"] = "Escolaridade:";
+
+$idioma["legenda_dados_outros"] = "Outras informações";
+$idioma["form_rendafamiliar"] = "Renda familiar:";
+$idioma["rendafamiliar_vazio"] = "Informe a renda familiar";
+$idioma["form_profissao"] = "Profissão:";
+$idioma["profissao_vazio"] = "Campo profissão é obrigatório.";
+$idioma["form_observacoes"] = "Observações:";
+
+$idioma["legenda_foto"] = "Foto";
+$idioma["form_foto"] = "Foto:";
+$idioma["arquivo_invalido"] = "Arquivo não é uma imagem! (Extensões permitidas: .jpg .jpeg .gif .png .bmp)";
+$idioma["arquivo_excluir"] = "Remover";
+$idioma["arquivo_excluir_confirma"] = "Deseja realmente deletar esse arquivo?";
+$idioma["arquivo_enviado"] = "Arquivo enviado: ";
+$idioma["form_foto_ajuda"] = "Extensões permitidas: .jpg .jpeg .gif .png .bmp";
+
+$idioma["json_erro"] = "Cep não encontrado.";
+$idioma['sem_premissao_sindicatos'] = 'Usuário não possui a sindicato necessária associada.';
+
+$idioma["legenda_curso_anterior"] = "Formação do Aluno";
+$idioma["form_curso_anterior"] = "Tipo de curso:";
+$idioma["form_curso_anterior_nome"] = "Nome do curso:";
+$idioma["form_curso_anterior_sindicato"] = "Instituição de Ensino:";
+$idioma["form_curso_anterior_idcidade"] = "Cidade:";
+$idioma["form_curso_anterior_idestado"] = "Estado:";
+$idioma["form_curso_anterior_pais"] = "País:";
+$idioma["form_curso_anterior_carga_horaria"] = "Carga Horária:";
+$idioma["form_curso_anterior_estagio_concluido_em"] = "Estagio concluido em:";
+
+$idioma["form_curso_anterior_ano_conclusao"] = "Ano de conclusão:";
+$idioma['form_data_nascimento_vazio'] = 'Escolha a data de nascimento';

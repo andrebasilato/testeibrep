@@ -1,0 +1,32 @@
+<? 
+$idioma["titulo_opcao"] = "Arquivos dos cursos";
+$idioma["curriculo_selecionado"] = "Currículo selecionado: <strong> %s (%s)</strong>";
+$idioma["confirmacao"] = "Confirmação:";
+$idioma["nota"] = "<strong>Obs:</strong> Todas as ações do painel são monitoradas.";
+$idioma["salvar"] = "Salvar";
+$idioma["cancelar"] = "Cancelar";
+$idioma['anexar_arquivo'] = "Anexar arquivos:";
+$idioma['outro_arquivo'] = "Anexar outro arquivo";
+$idioma['arquivo_invalido'] = "Formato de arquivo não permitido";
+$idioma["arquivos_cursos_sucesso"] = "Arquivo(s) enviado(s) com sucesso.";
+$idioma["listagem_titulo"] = "Título";
+$idioma["listagem_descricao"] = "Descrição";
+$idioma["listagem_nome"] = "Nome";
+$idioma["listagem_tamanho"] = "Tamanho";
+$idioma["listagem_opcoes"] = "Opções";
+$idioma["btn_remover_permissao_excluir"] = "Sem permissão para remover.";
+$idioma["confirmar_remocao"] = "Deseja realmente remover o arquivo?";
+$idioma["remover_arquivoscursos_sucesso"] = "Arquivo removido com sucesso.";
+$idioma["btn_remover"] = "Remover arquivo";
+$idioma["btn_download"] = "Baixar arquivo";
+$idioma["btn_visualizar"] = "Visualizar imagem";
+$idioma["visualizar"] = "Visualizar";
+$idioma["baixar"] = "Baixar";
+$idioma["sem_arquivos"] = "Obrigatório enviar ao menos 1 (um) arquivo.";
+$idioma["form_titulo"] = "Título:";
+$idioma["titulo_vazio"] = "Informe o titulo do arquivo.";
+$idioma["form_descricao"] = "Descrição:";
+$idioma["ajuda_nome_descricao"] = "O nome e a descrição serão associados a todos os arquivos anexados acima.";
+$idioma["clique_ativar_inativar"] = "Clique para modificar a situação da opção";
+$idioma["json_erro"] = "Erro ao tentar solicitar o JSON";
+?>

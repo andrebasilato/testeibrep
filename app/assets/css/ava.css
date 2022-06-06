@@ -1,0 +1,159 @@
+/* CSS Document */
+
+body {
+	padding-top: 35px !important;
+	min-width: 1200px;
+}
+.page-header {
+	padding-top: 20px;	
+}
+.navbar-fixed-top .navbar-inner {
+	height: 35px;
+}
+.navbar .brand {
+	font-size: 10px;
+	padding: 12px 15px;
+	color: #CCCCCC;
+	padding: 12px 0px 15px 45px;
+}
+.brand .botao-voltar {
+	background-color: #333333;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 35px;
+	width: 35px;
+	z-index: 20003;
+	background-image: url(../img/arrow_full_left.png);
+	background-repeat:no-repeat;
+	background-position: 9px 9px;
+	-webkit-transition: all 0.2s ease-out 0s;
+	-moz-transition: all 0.2s ease-out 0s;
+	-o-transition: all 0.2s ease-out 0s;
+	-ms-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+}
+.brand:hover > .botao-voltar {
+	background-color: #666666;
+}
+.topo-curso {
+	background: #FFFFFF;
+	height: 70px;
+	border-bottom:1px #E4E4e4 solid;
+	-webkit-transition:  all 0.2s ease-out 0s;
+	-moz-transition: all 0.2s ease-out 0s;
+	-o-transition:  all 0.2s ease-out 0s;
+	-ms-transition:  all 0.2s ease-out 0s;
+	transition:  all 0.2s ease-out 0s;
+}
+.topo-curso .info-curso {
+	float:left;
+	left:0px;
+}
+.topo-curso .info-curso .imagem {
+	float: left;
+	width: 100px;
+	height: 70px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.topo-curso .info-curso .detalhes {
+	padding: 16px 0px 0px 115px;
+}
+.topo-curso .info-curso .detalhes .nome {
+	font-family: 'Calibri', Calibri, Verdana, Geneva, sans-serif;
+	font-size: 23px;
+	letter-spacing: -1px;
+	font-weight: lighter;
+	color: #333333;
+	line-height: 20px;
+}
+.topo-curso .info-curso .detalhes .status {
+	color: #999;
+	font-weight: normal;
+	color: #999999;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.topo-curso .menu-curso {
+	float:right;
+	right: 0px;
+}
+.menu-curso-ul {
+	list-style:none;
+}
+.menu-curso-ul li {
+	list-style: none;
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px;
+	border: none;
+}
+.menu-curso-ul li a {
+	display: block;
+	color:#666666;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+	margin: 0px;
+	border-left: 1px #F4F4F4 solid;
+	height: 60px;
+	text-decoration: none;
+	background-color: #FFF;
+	-webkit-transition: all 0.2s ease-out 0s;
+	-moz-transition: all 0.2s ease-out 0s;
+	-o-transition: all 0.2s ease-out 0s;
+	-ms-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+}
+.menu-curso-ul li a:hover {
+	background-color: #F4F4F4;
+	border-bottom: 2px #336699 solid;
+	padding: 8px 20px 0px 20px;
+}
+.menu-curso-ul li a img {
+	display: table;
+	width: auto;
+	margin: 0 auto 5px;
+}
+/* MINI */
+.mini {
+	height: 40px !important;
+	position:fixed;
+	top: 35px;
+	left:0px;
+	right:0px;
+	-webkit-transition:  all 0.2s ease-out 0s;
+	-moz-transition: all 0.2s ease-out 0s;
+	-o-transition:  all 0.2s ease-out 0s;
+	-ms-transition:  all 0.2s ease-out 0s;
+	transition:  all 0.2s ease-out 0s;
+}
+.mini .info-curso .imagem {
+	width: 50px;
+	height: 40px;
+}
+.mini .info-curso .detalhes {
+	padding: 10px 0px 0px 60px;
+}
+.mini .info-curso .detalhes .nome {
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 20px;
+}
+.mini .info-curso .detalhes .status {
+	display: none;
+}
+.mini .menu-curso-ul li a {
+	height: 30px;
+	color:#000000;
+}
+.mini .menu-curso-ul li a:hover {
+	background-color: #F4F4F4;
+}
+.mini .menu-curso-ul li a img {
+	display: none;
+}

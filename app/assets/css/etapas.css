@@ -1,0 +1,55 @@
+/**
+ * PROGRESS
+ */
+#progress,#complete {
+    width: 520px;
+    margin: 1px 0 19px;
+    height: 32px;
+    background:url(../img/etapas/progress.png);
+    position:relative;
+}
+#complete {
+    background-position: 0px 57px;
+    margin-top: 0;
+}
+#complete #marker {
+    position: absolute;
+    top: 0;
+    right: -26px;
+    background:url(../img/etapas/markers.png);
+    width: 26px;
+    height: 32px;
+}
+#progress .s1 {
+    width: 19px;
+}
+#progress .s2 {
+    width:111px;
+}
+#progress .s3 {
+    width:203px;
+}
+#progress .s4 {
+    width:295px;
+}
+#progress .s5 {
+    width:386px;
+}
+#progress .s6 {
+    width:478px;
+}
+#progress .s2 #marker {
+    background-position: -26px 0;
+}
+#progress .s3 #marker {
+    background-position: -52px 0;
+}
+#progress .s4 #marker {
+    background-position: -78px 0;
+}
+#progress .s5 #marker {
+    background-position: -104px 0;
+}
+#progress .s6 #marker {
+    background-position: -130px 0;
+}

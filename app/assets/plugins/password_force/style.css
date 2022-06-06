@@ -1,0 +1,100 @@
+/*  ADVANCED STYLES */
+.top_testresult{
+	font-weight: bold;
+	font-size:13px;
+	font-family: Verdana, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#333333;
+	padding:0;
+	margin:0 0 2px 0;
+	-webkit-border-radius: 3px;
+  	-moz-border-radius: 3px;
+  	border-radius: 3px;
+}
+.top_testresult span{
+	padding:6px;
+	margin:0;
+}
+.top_shortPass{
+	color:#bc0000;
+	border:1px solid #bc0000;
+	display:block;
+	padding:5px 10px 6px 25px;
+	margin: 0px 0px 0px 20px;
+	float:right;
+	white-space: nowrap;
+	background:url(images/setas.png) no-repeat scroll 5px 0 #edabab;
+}
+.top_badPass{
+	color:#497172;
+	border:1px solid #497172;
+	display:block;
+	padding:5px 10px 6px 25px;
+	margin: 0px 0px 0px 20px;
+	float:right;
+	white-space: nowrap;
+	background:url(images/setas.png) no-repeat scroll 5px -28px #C0D6D7;
+}
+.top_goodPass{
+	color:#bc9f00;
+	border:1px solid #bc9f00;
+	display:block;
+	padding:5px 10px 6px 25px;
+	margin: 0px 0px 0px 20px;
+	float:right;
+	white-space: nowrap;
+	background:url(images/setas.png) no-repeat scroll 5px -56px #ede3ab;
+}
+.top_strongPass{
+	color:#73bc00;
+	border:1px solid #73bc00;
+	display:block;
+	padding:5px 10px 6px 25px;
+	margin: 0px 0px 0px 20px;
+	float:right;
+	white-space: nowrap;
+	background:url(images/setas.png) no-repeat scroll 5px -84px #d3edab;
+}
+
+/* 	RESULT STYLE  */
+.testresult{
+	font-weight: bold;
+	font-size:13px;
+	font-family: arial,helvetica,san-serif;
+	color:#666;
+	padding:0px 0px 12px 10px;
+	margin-left:10px;
+	display: block;
+	height:17px;
+	float:right;
+}
+.testresult span{
+	padding:6px 20px 12px 10px;
+	margin: 0px 0px 0px 20px;
+	display:block;
+	float:right;
+	white-space: nowrap;
+}
+.shortPass{
+	background:url(images/red.png) no-repeat 0 0;
+}
+.shortPass span{
+	background:url(images/red.png) no-repeat top right;
+}
+.badPass{
+	background:url(images/yellow.png) no-repeat 0 0;
+}
+.badPass span{
+	background:url(images/yellow.png) no-repeat top right;
+}
+.goodPass{
+	background:url(images/blue.png) no-repeat 0 0;
+}
+.goodPass span{
+	background:url(images/blue.png) no-repeat top right;
+}
+.strongPass{
+	background:url(images/green.png) no-repeat 0 0;
+}
+.strongPass span{
+	background:url(images/green.png) no-repeat top right;
+}
